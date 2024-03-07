@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cricket Game</h1>
+    <button class="btn" onclick="chooseBat();"><img src="Images/bat.jpg" alt="Bat image" class="img-class"></button>
+
+    <button class="btn" onclick="chooseBall();"><img src="Images/ball.jpg" alt="Ball image" class="img-class"></button>
+
+    <button class="btn" onclick="chooseStump();"><img src="Images/stumps.jpg" alt="Stumps image"
+    class="img-class"></button>
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+    <button class="btn" onclick="localStorage.clear();resetScore()">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
